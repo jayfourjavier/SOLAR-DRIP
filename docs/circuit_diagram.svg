@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640"
+    font-family="Arial, Helvetica, sans-serif">
+    <rect width="1100" height="640" fill="#ffffff" />
+    <text x="550" y="28" font-size="20" font-weight="bold" text-anchor="middle" fill="#222">SOLAR
+        DRIP - CIRCUIT DIAGRAM</text>
+
+    <!-- ===================== WIRES ===================== -->
+    <g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Solar panel -> charge controller PV -->
+        <path d="M160 100 H250" stroke="#d32f2f" />
+        <path d="M160 130 H250" stroke="#000000" />
+        <!-- Battery -> SW1 -> charge controller BAT -->
+        <path d="M160 200 H190" stroke="#f9a825" />
+        <path d="M230 200 H250" stroke="#f9a825" />
+        <path d="M160 230 H250" stroke="#1565c0" />
+        <!-- Charge controller LOAD -> SW2 -> power rails -->
+        <path d="M450 100 H490" stroke="#f9a825" />
+        <path d="M530 100 H900" stroke="#f9a825" />
+        <path d="M450 130 H930" stroke="#1565c0" />
+        <!-- Rails -> Arduino VIN / GND -->
+        <path d="M600 100 V170" stroke="#f9a825" />
+        <path d="M630 130 V170" stroke="#1565c0" />
+        <!-- Rails -> Cytron VIN / GND -->
+        <path d="M900 100 V170" stroke="#f9a825" />
+        <path d="M930 130 V170" stroke="#1565c0" />
+        <!-- Arduino D10 / D11 -> Cytron DIR / PWM -->
+        <path d="M760 250 H860" stroke="#1565c0" />
+        <path d="M760 280 H860" stroke="#f9a825" />
+        <!-- Soil sensor -> Arduino -->
+        <path d="M440 310 H560" stroke="#1565c0" />
+        <path d="M440 340 H560" stroke="#000000" />
+        <path d="M440 370 H560" stroke="#f9a825" />
+        <!-- Cytron motor out -> pump -->
+        <path d="M900 420 V490" stroke="#d32f2f" />
+        <path d="M930 420 V490" stroke="#000000" />
+    </g>
+
+    <!-- Wire junction dots -->
+    <g fill="#f9a825">
+        <circle cx="600" cy="100" r="4" />
+        <circle cx="900" cy="100" r="4" />
+    </g>
+    <g fill="#1565c0">
+        <circle cx="630" cy="130" r="4" />
+        <circle cx="930" cy="130" r="4" />
+    </g>
+
+    <!-- ===================== SWITCHES ===================== -->
+    <g stroke="#222" stroke-width="3" fill="#fff" stroke-linecap="round">
+        <!-- SW1 -->
+        <circle cx="190" cy="200" r="4" />
+        <circle cx="230" cy="200" r="4" />
+        <line x1="190" y1="200" x2="224" y2="182" />
+        <!-- SW2 -->
+        <circle cx="490" cy="100" r="4" />
+        <circle cx="530" cy="100" r="4" />
+        <line x1="490" y1="100" x2="524" y2="82" />
+    </g>
+    <text x="210" y="226" font-size="12" text-anchor="middle" fill="#222">SW1 (BATTERY)</text>
+    <text x="510" y="70" font-size="12" text-anchor="middle" fill="#222">SW2 (LOAD)</text>
+
+    <!-- ===================== SOLAR PANEL ===================== -->
+    <rect x="40" y="80" width="120" height="70" fill="#e3f2fd" stroke="#222" stroke-width="2" />
+    <g stroke="#90a4ae" stroke-width="1">
+        <line x1="80" y1="80" x2="80" y2="150" />
+        <line x1="120" y1="80" x2="120" y2="150" />
+        <line x1="40" y1="115" x2="160" y2="115" />
+    </g>
+    <text x="100" y="68" font-size="13" font-weight="bold" text-anchor="middle" fill="#222">SOLAR
+        PANEL 50W 18V</text>
+    <text x="152" y="95" font-size="12" font-weight="bold" text-anchor="end" fill="#d32f2f">+</text>
+    <text x="152" y="145" font-size="14" font-weight="bold" text-anchor="end" fill="#000">-</text>
+
+    <!-- ===================== BATTERY ===================== -->
+    <rect x="40" y="180" width="120" height="70" fill="#eceff1" stroke="#222" stroke-width="2" />
+    <text x="100" y="212" font-size="13" font-weight="bold" text-anchor="middle" fill="#222">LEAD
+        ACID</text>
+    <text x="100" y="230" font-size="13" font-weight="bold" text-anchor="middle" fill="#222">12V 8Ah</text>
+    <text x="152" y="196" font-size="12" font-weight="bold" text-anchor="end" fill="#f9a825">+</text>
+    <text x="152" y="244" font-size="14" font-weight="bold" text-anchor="end" fill="#1565c0">-</text>
+
+    <!-- ===================== CHARGE CONTROLLER ===================== -->
+    <rect x="250" y="60" width="200" height="200" rx="6" fill="#fff8e1" stroke="#222"
+        stroke-width="2" />
+    <text x="350" y="160" font-size="13" font-weight="bold" text-anchor="middle" fill="#222">PWM
+        SOLAR</text>
+    <text x="350" y="178" font-size="13" font-weight="bold" text-anchor="middle" fill="#222">CHARGE
+        CONTROLLER</text>
+    <g font-size="12" fill="#222">
+        <text x="258" y="104">PV+</text>
+        <text x="258" y="134">PV-</text>
+        <text x="258" y="204">BAT+</text>
+        <text x="258" y="234">BAT-</text>
+        <text x="442" y="104" text-anchor="end">LOAD+</text>
+        <text x="442" y="134" text-anchor="end">LOAD-</text>
+    </g>
+
+    <!-- ===================== SOIL SENSOR ===================== -->
+    <rect x="300" y="290" width="140" height="100" rx="6" fill="#e8f5e9" stroke="#222"
+        stroke-width="2" />
+    <text x="370" y="330" font-size="13" font-weight="bold" text-anchor="middle" fill="#222">
+        CAPACITIVE</text>
+    <text x="370" y="348" font-size="13" font-weight="bold" text-anchor="middle" fill="#222">SOIL
+        MOISTURE</text>
+    <text x="370" y="366" font-size="13" font-weight="bold" text-anchor="middle" fill="#222">SENSOR</text>
+    <g font-size="12" fill="#222" text-anchor="end">
+        <text x="434" y="314">VCC</text>
+        <text x="434" y="344">GND</text>
+        <text x="434" y="374">AOUT</text>
+    </g>
+
+    <!-- ===================== ARDUINO UNO ===================== -->
+    <rect x="560" y="170" width="200" height="250" rx="6" fill="#e0f7fa" stroke="#222"
+        stroke-width="2" />
+    <text x="660" y="290" font-size="15" font-weight="bold" text-anchor="middle" fill="#222">ARDUINO
+        UNO</text>
+    <text x="660" y="310" font-size="12" text-anchor="middle" fill="#555">(on breakout board)</text>
+    <g font-size="12" fill="#222">
+        <text x="600" y="190" text-anchor="middle">VIN</text>
+        <text x="630" y="190" text-anchor="middle">GND</text>
+        <text x="568" y="314">5V</text>
+        <text x="568" y="344">GND</text>
+        <text x="568" y="374">A0</text>
+        <text x="752" y="254" text-anchor="end">D10</text>
+        <text x="752" y="284" text-anchor="end">D11</text>
+    </g>
+
+    <!-- ===================== CYTRON MD10C ===================== -->
+    <rect x="860" y="170" width="180" height="250" rx="6" fill="#fce4ec" stroke="#222"
+        stroke-width="2" />
+    <text x="950" y="290" font-size="15" font-weight="bold" text-anchor="middle" fill="#222">CYTRON</text>
+    <text x="950" y="310" font-size="15" font-weight="bold" text-anchor="middle" fill="#222">MD10C</text>
+    <text x="950" y="328" font-size="12" text-anchor="middle" fill="#555">MOTOR DRIVER</text>
+    <g font-size="12" fill="#222">
+        <text x="900" y="190" text-anchor="middle">VIN</text>
+        <text x="930" y="190" text-anchor="middle">GND</text>
+        <text x="868" y="254">DIR</text>
+        <text x="868" y="284">PWM</text>
+        <text x="900" y="410" text-anchor="middle">M+</text>
+        <text x="930" y="410" text-anchor="middle">M-</text>
+    </g>
+
+    <!-- ===================== PUMP ===================== -->
+    <rect x="860" y="490" width="180" height="70" rx="6" fill="#ede7f6" stroke="#222"
+        stroke-width="2" />
+    <circle cx="950" cy="525" r="22" fill="#fff" stroke="#222" stroke-width="2" />
+    <text x="950" y="530" font-size="14" font-weight="bold" text-anchor="middle" fill="#222">M</text>
+    <text x="950" y="582" font-size="13" font-weight="bold" text-anchor="middle" fill="#222">PERISTALTIC
+        PUMP</text>
+    <text x="950" y="600" font-size="12" text-anchor="middle" fill="#555">-&gt; HOSE -&gt; PLANT</text>
+
+    <!-- ===================== LEGEND ===================== -->
+    <g font-size="12" fill="#222">
+        <text x="40" y="470" font-weight="bold">WIRE COLORS</text>
+        <rect x="40" y="482" width="24" height="6" fill="#d32f2f" />
+        <text x="72" y="489">Red: PV+ / Motor +</text>
+        <rect x="40" y="502" width="24" height="6" fill="#000000" />
+        <text x="72" y="509">Black: PV- / Sensor GND / Motor -</text>
+        <rect x="40" y="522" width="24" height="6" fill="#f9a825" />
+        <text x="72" y="529">Yellow: Power (+) / Signal</text>
+        <rect x="40" y="542" width="24" height="6" fill="#1565c0" />
+        <text x="72" y="549">Blue: Ground (-) / DIR / Sensor VCC</text>
+    </g>
+</svg>
