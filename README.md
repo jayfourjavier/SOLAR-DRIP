@@ -17,21 +17,19 @@ Key features:
 
 | Item | Image | General Description | Usage | Unit Price | Quantity | Amount |
 | --- | --- | --- | --- | --- | --- | --- |
-| CYTRON MD10C | <img src="docs/cytron_md10c.png" width="400" height="400" alt="cytron_md10c"> | 10A DC motor driver with DIR and PWM inputs | Drives the peristaltic pump with controllable speed and direction | ₱ 774.00 | 1 | ₱ 774.00 |
-| ARDUINO UNO | <img src="docs/arduino_uno.png" width="400" height="400" alt="arduino_uno"> | ATmega328P microcontroller board | Main controller; reads the soil sensor and runs the watering logic | ₱ 250.00 | 1 | ₱ 250.00 |
-| ARDUINO UNO BREAKOUT BOARD | <img src="docs/arduino_uno_breakout_board.png" width="400" height="400" alt="arduino_uno_breakout_board"> | Screw-terminal shield for the Arduino Uno | Secure wire connections for power, sensor and motor driver | ₱ 200.00 | 1 | ₱ 200.00 |
-| LEAD ACID BATTERY 12V 8AH | <img src="docs/lead_acid_battery_12v_8ah.png" width="400" height="400" alt="lead_acid_battery_12v_8ah"> | Sealed rechargeable 12V 8Ah battery | Stores solar energy so the system runs at night and on cloudy days | ₱ 600.00 | 1 | ₱ 600.00 |
-| PWM SOLAR CHARGE CONTROLLER | <img src="docs/pwm_solar_charge_controller.png" width="400" height="400" alt="pwm_solar_charge_controller"> | PWM charge controller with PV, battery and load terminals | Regulates battery charging and provides the switched 12V load output | ₱ 300.00 | 1 | ₱ 300.00 |
-| CAPACITIVE SOIL MOISTURE SENSOR | <img src="docs/capacitive_soil_moisture_sensor.png" width="400" height="400" alt="capacitive_soil_moisture_sensor"> | Analog corrosion-resistant soil moisture sensor | Measures soil moisture (raw ADC value; higher means drier) | ₱ 60.00 | 1 | ₱ 60.00 |
-| SWITCH | <img src="docs/switch.png" width="400" height="400" alt="switch"> | Toggle switch | Manual power on/off for the battery and load lines | ₱ 100.00 | 1 | ₱ 100.00 |
-| PERISTALTIC PUMP | <img src="docs/peristaltic_pump.png" width="400" height="400" alt="peristaltic_pump"> | 12V DC peristaltic (tube) pump | Moves water from the reservoir to the plant | ₱ 500.00 | 1 | ₱ 500.00 |
-| HOSE | <img src="docs/hose.png" width="400" height="400" alt="hose"> | Flexible water tubing | Carries water from the reservoir through the pump to the plant | ₱ 200.00 | 1 | ₱ 200.00 |
-| SOLAR PANEL 50W 18V | <img src="docs/solar_panel_50w_18v.png" width="400" height="400" alt="solar_panel_50w_18v"> | 50W, 18V photovoltaic panel | Generates power to charge the battery | ₱ 1,168.00 | 1 | ₱ 1,168.00 |
-| SINTRA BOARD A4 | <img src="docs/sintra_board_a4.png" width="400" height="400" alt="sintra_board_a4"> | A4-size rigid PVC foam board | Casing for the electronics | ₱ 200.00 | 2 | ₱ 400.00 |
-| CYANOACRYLATE SUPER GLUE | <img src="docs/cyanoacrylate_super_glue.png" width="400" height="400" alt="cyanoacrylate_super_glue"> | Fast-curing instant adhesive | Bonds the Sintra board panels into the casing | ₱ 150.00 | 1 | ₱ 150.00 |
+| CYTRON MD10C | <img src="docs/cytron_md10c.png" width="200" alt="cytron_md10c"> | 10A DC motor driver with DIR and PWM inputs | Drives the peristaltic pump with controllable speed and direction | ₱ 774.00 | 1 | ₱ 774.00 |
+| ARDUINO UNO | <img src="docs/arduino_uno.png" width="200" alt="arduino_uno"> | ATmega328P microcontroller board | Main controller; reads the soil sensor and runs the watering logic | ₱ 250.00 | 1 | ₱ 250.00 |
+| ARDUINO UNO BREAKOUT BOARD | <img src="docs/arduino_uno_breakout_board.png" width="200" alt="arduino_uno_breakout_board"> | Screw-terminal shield for the Arduino Uno | Secure wire connections for power, sensor and motor driver | ₱ 200.00 | 1 | ₱ 200.00 |
+| LEAD ACID BATTERY 12V 8AH | <img src="docs/lead_acid_battery_12v_8ah.png" width="200" alt="lead_acid_battery_12v_8ah"> | Sealed rechargeable 12V 8Ah battery | Stores solar energy so the system runs at night and on cloudy days | ₱ 600.00 | 1 | ₱ 600.00 |
+| PWM SOLAR CHARGE CONTROLLER | <img src="docs/pwm_solar_charge_controller.png" width="200" alt="pwm_solar_charge_controller"> | PWM charge controller with PV, battery and load terminals | Regulates battery charging and provides the switched 12V load output | ₱ 300.00 | 1 | ₱ 300.00 |
+| CAPACITIVE SOIL MOISTURE SENSOR | <img src="docs/capacitive_soil_moisture_sensor.png" width="200" alt="capacitive_soil_moisture_sensor"> | Analog corrosion-resistant soil moisture sensor | Measures soil moisture (raw ADC value; higher means drier) | ₱ 60.00 | 1 | ₱ 60.00 |
+| SWITCH | <img src="docs/switch.png" width="200" alt="switch"> | Toggle switch | Manual power on/off for the battery and load lines | ₱ 100.00 | 1 | ₱ 100.00 |
+| PERISTALTIC PUMP | <img src="docs/peristaltic_pump.png" width="200" alt="peristaltic_pump"> | 12V DC peristaltic (tube) pump | Moves water from the reservoir to the plant | ₱ 500.00 | 1 | ₱ 500.00 |
+| HOSE | <img src="docs/hose.png" width="200" alt="hose"> | Flexible water tubing | Carries water from the reservoir through the pump to the plant | ₱ 200.00 | 1 | ₱ 200.00 |
+| SOLAR PANEL 50W 18V | <img src="docs/solar_panel_50w_18v.png" width="200" alt="solar_panel_50w_18v"> | 50W, 18V photovoltaic panel | Generates power to charge the battery | ₱ 1,168.00 | 1 | ₱ 1,168.00 |
+| SINTRA BOARD A4 | <img src="docs/sintra_board_a4.png" width="200" alt="sintra_board_a4"> | A4-size rigid PVC foam board | Casing for the electronics | ₱ 200.00 | 2 | ₱ 400.00 |
+| CYANOACRYLATE SUPER GLUE | <img src="docs/cyanoacrylate_super_glue.png" width="200" alt="cyanoacrylate_super_glue"> | Fast-curing instant adhesive | Bonds the Sintra board panels into the casing | ₱ 150.00 | 1 | ₱ 150.00 |
 | **TOTAL** | | | | | | **₱ 4,702.00** |
-
-> Component images (400x400 px) are in the `docs/` folder.
 
 ## STEP-BY-STEP MAKING PROCESS
 
